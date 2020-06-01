@@ -19,7 +19,14 @@ Demonstrate how to ship logs using Filebeat to ELK Stack 7.7
  5. Create index pattern in Kibana  ->  Discover
   **localhost:5601**
   ![Index](__screenshoot/create-index1.png "Create Index ")
+  
+  
   ![Index](__screenshoot/create-index2.png "Create Index ")
  6.  Check our application log in Kibana -> Discover
  ![Index](__screenshoot/myindex1.png "Create Index ")
+ 
+ 
  ![Index](__screenshoot/myindex2.png "Create Index ")
+ 
+ ## Reference Link
+ https://github.com/deviantony/docker-elk
