@@ -1,0 +1,21 @@
+
+apm-server:
+  host: "0.0.0.0:8200"
+  logging.level: info
+
+  auth:
+    anonymous:
+      enabled: true
+
+  kibana:
+    enabled: true
+    host: "kibana:5601"
+    username: "admin"
+    password: "adminadmin123"
+
+output.elasticsearch:
+  hosts: ['elasticsearch:9200']
+  enabled: true
+
+apm-server.rum.enabled: true
+apm-server.rum.allow_origins: ['*']

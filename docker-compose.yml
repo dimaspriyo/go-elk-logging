@@ -55,7 +55,15 @@ services:
               target: /go/src/app/application.log
         networks: 
             - elk
-    
+    apm-server:
+        build:
+            context: ./apm-server/
+        ports:
+            - "8200:8200"
+        networks:
+            - elk
+
+
 networks: 
     elk:
         driver: bridge
